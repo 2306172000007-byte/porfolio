@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shreya Pandey | Brand Marketing & Growth Manager. Experience across Brand Strategy, Performance Marketing, OOH, PR, Influencer Marketing and GTM Campaigns.">
+<meta property="og:title" content="Shreya Pandey | Brand Marketing & Growth Manager">
+<meta property="og:description" content="Integrated marketer driving growth through brand, performance, PR, influencer and launch campaigns.">
+<meta property="og:type" content="website">
+<title>Shreya Pandey | Brand Marketing & Growth Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0A1628;--navy2:#0F2040;--navy3:#152952;--crimson:#C41E3A;--crimson2:#A01830;--gold:#D4AF6B;--gold2:#E8C97A;--cream:#F5F0E8;--white:#fff;--mid:#8A9BB5;--muted:#5A6B85;--border:rgba(212,175,107,0.2)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden;cursor:none}
+.cursor{position:fixed;width:10px;height:10px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .08s}
+.cursor-ring{position:fixed;width:34px;height:34px;border:1.5px solid var(--gold);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .14s ease;opacity:.55}
+.cursor-ring.big{width:52px;height:52px;opacity:.25}
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .65s,transform .65s}
+.reveal.on{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-44px);transition:opacity .65s,transform .65s}
+.rl.on{opacity:1;transform:none}
+.rr{opacity:0;transform:translateX(44px);transition:opacity .65s,transform .65s}
+.rr.on{opacity:1;transform:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,22,40,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1200px;margin:0 auto;height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--gold);letter-spacing:.05em}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{font-size:11px;color:var(--mid);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--crimson);color:#fff;padding:8px 20px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:background .2s}
+.nav-cta:hover{background:var(--crimson2)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding:100px 2rem 60px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 65% 50%,rgba(196,30,58,.07),transparent 60%),radial-gradient(ellipse at 10% 80%,rgba(212,175,107,.05),transparent 50%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,107,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,107,.03) 1px,transparent 1px);background-size:60px 60px}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 400px;gap:4rem;align-items:center;position:relative;z-index:2}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1.4rem}
+.eyebrow-line{width:36px;height:1px;background:var(--gold)}
+.eyebrow-txt{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1.name{font-family:'Cormorant Garamond',serif;font-size:clamp(50px,8vw,86px);font-weight:700;line-height:1;color:#fff;margin-bottom:.4rem}
+h1.name span{color:var(--crimson);display:block;font-style:italic}
+.hero-title{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);margin-bottom:1.8rem}
+.hero-summary{font-size:15px;color:rgba(255,255,255,.58);line-height:1.85;margin-bottom:2.2rem;max-width:490px}
+.hstats{display:flex;gap:2rem;margin-bottom:2.2rem;flex-wrap:wrap}
+.hs{border-left:2px solid var(--crimson);padding-left:.9rem}
+.hs-n{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:#fff;line-height:1}
+.hs-n em{font-size:16px;color:var(--gold);font-style:normal}
+.hs-l{font-size:9px;color:var(--muted);letter-spacing:.07em;margin-top:3px;text-transform:uppercase}
+.hero-btns{display:flex;gap:.9rem}
+.btn-g{background:var(--gold);color:var(--navy);padding:13px 26px;font-size:11px;font-weight:700;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:background .2s}
+.btn-g:hover{background:var(--gold2)}
+.btn-o{border:1px solid rgba(212,175,107,.4);color:var(--gold);padding:12px 26px;font-size:11px;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:all .2s}
+.btn-o:hover{border-color:var(--gold);background:rgba(212,175,107,.07)}
+
+/* PHOTO */
+.photo-wrap{position:relative}
+.photo-frame{border:1px solid var(--border);position:relative}
+.photo-frame::before{content:'';position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:1px solid rgba(196,30,58,.25);z-index:-1}
+.photo-frame img{width:100%;height:480px;object-fit:cover;object-position:center top;display:block;filter:grayscale(15%)}
+.photo-badge{position:absolute;bottom:-16px;left:16px;background:var(--crimson);padding:14px 18px;min-width:190px}
+.pb-top{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:3px}
+.pb-main{font-size:12px;font-weight:600;color:#fff}
+.award-pill{position:absolute;top:16px;right:-12px;background:var(--navy2);border:1px solid var(--gold);padding:9px 12px;display:flex;gap:7px;align-items:center}
+.ap-icon{font-size:16px}
+.ap-txt{font-size:9px;color:var(--gold);letter-spacing:.05em;line-height:1.4}
+
+/* TICKER */
+.ticker-wrap{background:var(--crimson);padding:11px 0;overflow:hidden}
+.ticker-inner{display:flex;gap:0;white-space:nowrap;animation:tick 32s linear infinite}
+.ti{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#fff;padding:0 1.8rem;display:flex;align-items:center;gap:1.2rem;opacity:.92}
+.ts{color:rgba(255,255,255,.4);font-size:7px}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:90px 2rem}
+.con{max-width:1200px;margin:0 auto}
+.sl{display:flex;align-items:center;gap:10px;margin-bottom:.9rem}
+.sl-line{width:28px;height:1px;background:var(--gold)}
+.sl-txt{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.st{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,5vw,54px);font-weight:700;color:#fff;line-height:1.1;margin-bottom:.9rem}
+.st em{color:var(--crimson);font-style:italic}
+.ssub{font-size:14px;color:var(--mid);line-height:1.8;max-width:540px}
+
+/* METRICS */
+#impact{background:var(--navy2)}
+.met-intro{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:end;margin-bottom:3rem}
+.big-m{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.sub-m{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin-top:1px}
+.mbox{background:var(--navy2);padding:2.2rem 1.8rem;text-align:center;transition:background .3s;position:relative;overflow:hidden}
+.mbox:hover{background:var(--navy3)}
+.mbox::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--crimson);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.mbox:hover::after{transform:scaleX(1)}
+.mn{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem}
+.ml{font-size:10px;color:var(--muted);letter-spacing:.05em;line-height:1.6}
+.meta-strip{background:rgba(212,175,107,.05);border:1px solid var(--border);padding:1.8rem;margin-top:2rem;display:grid;grid-template-columns:repeat(5,1fr)}
+.ms{text-align:center;padding:.8rem;border-right:1px solid var(--border)}
+.ms:last-child{border-right:none}
+.ms-n{font-size:18px;font-weight:800;color:#fff;margin-bottom:3px}
+.ms-l{font-size:9px;color:var(--muted);letter-spacing:.05em}
+
+/* EXPERIENCE */
+#experience{background:var(--navy)}
+.exp-lay{display:grid;grid-template-columns:250px 1fr;gap:3.5rem;margin-top:2.5rem}
+.etabs{position:sticky;top:72px;height:fit-content}
+.etab{padding:1.1rem 1.3rem;cursor:pointer;border-left:2px solid transparent;transition:all .2s;margin-bottom:2px;background:rgba(255,255,255,.02)}
+.etab.on{border-left-color:var(--crimson);background:rgba(196,30,58,.06)}
+.etab:hover:not(.on){border-left-color:rgba(212,175,107,.3)}
+.etc{font-size:12px;font-weight:600;color:#fff;margin-bottom:2px}
+.etr{font-size:10px;color:var(--muted)}
+.etp{font-size:9px;color:var(--gold);margin-top:3px;letter-spacing:.04em}
+.epanel{display:none}
+.epanel.on{display:block}
+.eco{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:#fff;margin-bottom:.2rem}
+.erol{font-size:12px;color:var(--crimson);font-weight:500;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.2rem}
+.emet{font-size:11px;color:var(--muted);margin-bottom:1.8rem}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-bottom:1.8rem}
+.kpi{background:rgba(212,175,107,.05);border:1px solid var(--border);padding:1.1rem;text-align:center}
+.kv{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--gold)}
+.kl{font-size:9px;color:var(--muted);margin-top:3px;letter-spacing:.04em}
+.elist{list-style:none}
+.elist li{padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px;color:rgba(255,255,255,.62);line-height:1.75;display:flex;gap:.8rem}
+.elist li:last-child{border:none}
+.dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:9px}
+
+/* CASE STUDIES */
+#work{background:var(--navy2)}
+.cases{margin-top:2.5rem;display:grid;gap:2px}
+.case{display:grid;grid-template-columns:1fr 1fr;min-height:460px;overflow:hidden}
+.case.flip{direction:rtl}
+.case.flip>*{direction:ltr}
+.case-imgs{position:relative;overflow:hidden}
+.imgs2{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.imgs2 img,.img1{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.case:hover .imgs2 img,.case:hover .img1{transform:scale(1.05)}
+.cov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,.25),transparent)}
+.cbadge{position:absolute;top:16px;left:16px;background:var(--crimson);font-size:8px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;color:#fff}
+.ccon{background:var(--navy3);padding:2.5rem;display:flex;flex-direction:column;justify-content:center}
+.cbrand{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.65rem}
+.ctitle{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:.9rem}
+.cdesc{font-size:12px;color:var(--mid);line-height:1.8;margin-bottom:1.4rem}
+.cres{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:1.4rem}
+.rc{background:rgba(212,175,107,.05);border:1px solid var(--border);padding:.75rem;text-align:center}
+.rn{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--gold)}
+.rl2{font-size:8px;color:var(--muted);margin-top:2px;letter-spacing:.04em}
+.ctags{display:flex;flex-wrap:wrap;gap:.35rem}
+.ct{font-size:8px;background:rgba(196,30,58,.14);border:1px solid rgba(196,30,58,.22);color:rgba(255,255,255,.55);padding:3px 9px;letter-spacing:.06em;text-transform:uppercase}
+
+/* GALLERY */
+#gallery{background:var(--navy);padding:90px 2rem}
+.gal-intro{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:end;margin-bottom:2.5rem}
+.gg{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:3px}
+.gi{overflow:hidden;position:relative;cursor:pointer}
+.gi img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;filter:brightness(.82)}
+.gi:hover img{transform:scale(1.07);filter:brightness(1)}
+.gi.w{grid-column:span 2}
+.gi.t{grid-row:span 2}
+.gcap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(10,22,40,.94));padding:1.5rem .9rem .9rem;font-size:10px;color:rgba(255,255,255,.8);letter-spacing:.05em;transform:translateY(100%);transition:transform .28s}
+.gi:hover .gcap{transform:none}
+.glink{display:inline-block;margin-top:1.5rem;font-size:11px;color:var(--gold);text-decoration:none;letter-spacing:.08em;border-bottom:1px solid rgba(212,175,107,.3);padding-bottom:3px;transition:border-color .2s}
+.glink:hover{border-color:var(--gold)}
+
+/* VIDEO SECTION */
+#videos{background:var(--navy2);padding:90px 2rem}
+.vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+.vcard{background:var(--navy3);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:border-color .2s;text-decoration:none;display:block}
+.vcard:hover{border-color:var(--gold)}
+.vthumb{position:relative;aspect-ratio:9/16;background:var(--navy);overflow:hidden}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.75);transition:filter .3s}
+.vcard:hover .vthumb img{filter:brightness(.95)}
+.play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.play-circle{width:52px;height:52px;border-radius:50%;background:rgba(196,30,58,.85);display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.vcard:hover .play-circle{transform:scale(1.12)}
+.play-triangle{width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:3px}
+.vinfo{padding:1rem}
+.vtag{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--crimson);margin-bottom:4px}
+.vtitle{font-size:12px;font-weight:600;color:#fff;line-height:1.4}
+
+/* PRESS */
+#press{background:var(--navy)}
+.press-top{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:end;margin-bottom:2.5rem}
+.pstats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.psb{border:1px solid var(--border);padding:1.4rem;text-align:center}
+.psn{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--gold)}
+.psl{font-size:9px;color:var(--muted);margin-top:3px;letter-spacing:.05em}
+.plabs{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2rem}
+.plab{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);padding:7px 14px;font-size:10px;font-weight:600;color:var(--mid);letter-spacing:.07em;text-transform:uppercase;transition:all .2s}
+.plab:hover{border-color:var(--gold);color:var(--gold)}
+.press-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.press-img-card{overflow:hidden;border:1px solid var(--border)}
+.press-img-card img{width:100%;height:280px;object-fit:cover;object-position:top;display:block;transition:transform .4s;filter:brightness(.9)}
+.press-img-card:hover img{transform:scale(1.04);filter:brightness(1)}
+.awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.5rem}
+.acard{background:rgba(212,175,107,.04);border:1px solid var(--border);padding:1.75rem;display:flex;gap:1.2rem;align-items:flex-start;transition:border-color .2s}
+.acard:hover{border-color:var(--gold)}
+.aicon{width:48px;height:48px;background:var(--crimson);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px}
+.atitle{font-size:13px;font-weight:600;color:#fff;margin-bottom:.35rem}
+.adesc{font-size:11px;color:var(--muted);line-height:1.6}
+
+/* INFLUENCER */
+#influencer{background:var(--navy2)}
+.istats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin:2.5rem 0}
+.is{background:var(--navy2);padding:1.8rem;text-align:center}
+.isn{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:var(--gold)}
+.isl{font-size:9px;color:var(--muted);letter-spacing:.08em;margin-top:3px;text-transform:uppercase}
+.icities{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.8rem}
+.ctag{background:rgba(196,30,58,.1);border:1px solid rgba(196,30,58,.2);color:rgba(255,255,255,.65);font-size:10px;padding:5px 12px;letter-spacing:.05em}
+
+/* SKILLS */
+#skills{background:var(--navy)}
+.skgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:2.5rem}
+.skb{background:var(--navy2);padding:1.8rem}
+.skt{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem;font-weight:600}
+.sks{display:flex;flex-wrap:wrap;gap:.35rem}
+.sk{font-size:10px;color:rgba(255,255,255,.55);padding:4px 10px;border:1px solid rgba(255,255,255,.07);letter-spacing:.02em;transition:all .2s}
+.sk:hover{border-color:var(--gold);color:var(--gold)}
+.tools{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);margin-top:2px}
+.tb{background:var(--navy2);padding:1.1rem;text-align:center;font-size:10px;color:var(--mid);font-weight:500;transition:all .2s}
+.tb:hover{background:var(--navy);color:var(--gold)}
+
+/* CONTACT */
+#contact{background:var(--navy2);position:relative;overflow:hidden}
+#contact::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(196,30,58,.07),transparent 55%)}
+.clay{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center;position:relative;z-index:2}
+.clinks{margin-top:2.2rem;display:flex;flex-direction:column;gap:.9rem}
+.clink{display:flex;align-items:center;gap:.9rem;text-decoration:none;color:rgba(255,255,255,.65);font-size:14px;padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.07);transition:color .2s}
+.clink:hover{color:var(--gold)}
+.ci{width:36px;height:36px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;color:var(--gold)}
+.ctas{display:flex;flex-direction:column;gap:.9rem}
+.cta{display:block;text-align:center;text-decoration:none;padding:16px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:all .2s}
+.cta.p{background:var(--crimson);color:#fff}
+.cta.p:hover{background:var(--crimson2)}
+.cta.g{background:var(--gold);color:var(--navy)}
+.cta.g:hover{background:var(--gold2)}
+.cta.ol{border:1px solid var(--border);color:var(--gold)}
+.cta.ol:hover{border-color:var(--gold);background:rgba(212,175,107,.06)}
+.cquote{margin-top:2.5rem;padding:1.8rem;border-left:3px solid var(--crimson);background:rgba(196,30,58,.04)}
+.cqt{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:rgba(255,255,255,.75);line-height:1.6}
+
+footer{background:var(--navy);border-top:1px solid var(--border);padding:1.4rem 2rem;text-align:center}
+footer p{font-size:10px;color:var(--muted);letter-spacing:.06em}
+
+@media(max-width:900px){
+.hero-inner,.met-intro,.exp-lay,.gal-intro,.press-top,.clay{grid-template-columns:1fr}
+.big-m,.sub-m{grid-template-columns:repeat(2,1fr)}
+.gg{grid-template-columns:repeat(2,1fr)}
+.gi.w,.gi.t{grid-column:auto;grid-row:auto}
+.case,.case.flip{grid-template-columns:1fr;direction:ltr}
+.vgrid{grid-template-columns:repeat(2,1fr)}
+.skgrid{grid-template-columns:1fr}
+.tools{grid-template-columns:repeat(3,1fr)}
+.meta-strip{grid-template-columns:repeat(3,1fr)}
+.istats{grid-template-columns:repeat(2,1fr)}
+.awards-grid{grid-template-columns:1fr}
+.press-imgs{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav>
+  <div class="nav-in">
+    <span class="nav-logo">S. Pandey</span>
+    <ul class="nav-links">
+      <li><a href="#experience" onclick="go('experience')">Experience</a></li>
+      <li><a href="#work" onclick="go('work')">Work</a></li>
+      <li><a href="#gallery" onclick="go('gallery')">Gallery</a></li>
+      <li><a href="#press" onclick="go('press')">Press</a></li>
+      <li><a href="#contact" onclick="go('contact')">Contact</a></li>
+    </ul>
+    <a href="mailto:pandeyshreya303@gmail.com" class="nav-cta">Let's Connect</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow reveal"><div class="eyebrow-line"></div><span class="eyebrow-txt">Brand & Marketing Manager · Bengaluru</span></div>
+      <h1 class="name reveal">Shreya<span>Pandey.</span></h1>
+      <p class="hero-title reveal">Brand Marketing • Growth • GTM Strategy</p>
+      <p class="hero-summary reveal">Marketing professional with 4+ years of experience leading integrated brand, growth, performance, PR, influencer, OOH and launch campaigns. Managed ₹1.5Cr+ annual budgets, scaled multi-location businesses, built community-led marketing programs and executed full-funnel campaigns across digital and offline channels.</p>
+      <div class="hstats reveal">
+        <div class="hs"><div class="hs-n">₹1.5<em>Cr</em></div><div class="hs-l">Annual budget</div></div>
+        <div class="hs"><div class="hs-n">28<em>L+</em></div><div class="hs-l">Users reached</div></div>
+        <div class="hs"><div class="hs-n">100<em>+</em></div><div class="hs-l">PR placements</div></div>
+        <div class="hs"><div class="hs-n">4</div><div class="hs-l">Industry awards</div></div>
+      </div>
+      <div class="hero-btns reveal">
+        <a href="#work" class="btn-g" onclick="go('work')">View My Work</a>
+        <a href="https://www.linkedin.com/in/shreyapandey0912/" target="_blank" class="btn-o">LinkedIn</a>
+      </div>
+    </div>
+    <div class="photo-wrap rr">
+      <div class="photo-frame">
+        <img src="https://i.ibb.co/1JhR9r6f/MG-9510.jpg" alt="Shreya Pandey" onerror="this.style.cssText='width:100%;height:480px;display:block;background:linear-gradient(135deg,#0F2040,#152952)'">
+        <div class="photo-badge"><div class="pb-top">Food Connoisseurs India Awards</div><div class="pb-main">Best Restaurant Chain · Bengaluru</div></div>
+        <div class="award-pill"><span class="ap-icon">🏆</span><span class="ap-txt">ET Restaurant<br>Awards 2025</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ti">Brand Strategy <span class="ts">✦</span></span><span class="ti">360° Campaigns <span class="ts">✦</span></span><span class="ti">Performance Marketing <span class="ts">✦</span></span><span class="ti">ATL · BTL · OOH <span class="ts">✦</span></span><span class="ti">Influencer & PR <span class="ts">✦</span></span><span class="ti">New Store Launches <span class="ts">✦</span></span><span class="ti">Social Media Strategy <span class="ts">✦</span></span><span class="ti">Brand Repositioning <span class="ts">✦</span></span><span class="ti">Meta & Google Ads <span class="ts">✦</span></span><span class="ti">Brand Strategy <span class="ts">✦</span></span><span class="ti">360° Campaigns <span class="ts">✦</span></span><span class="ti">Performance Marketing <span class="ts">✦</span></span><span class="ti">ATL · BTL · OOH <span class="ts">✦</span></span><span class="ti">Influencer & PR <span class="ts">✦</span></span><span class="ti">New Store Launches <span class="ts">✦</span></span><span class="ti">Social Media Strategy <span class="ts">✦</span></span><span class="ti">Brand Repositioning <span class="ts">✦</span></span><span class="ti">Meta & Google Ads <span class="ts">✦</span></span>
+  </div>
+</div>
+
+<!-- IMPACT -->
+<section id="impact">
+  <div class="con">
+    <div class="met-intro">
+      <div class="rl"><div class="sl"><div class="sl-line"></div><span class="sl-txt">Numbers</span></div><h2 class="st">Results, not<br><em>just reach.</em></h2></div>
+      <p class="ssub rr">Every number here is verified — from Meta Ads Manager, cover reports, and PR trackers — built solo as Deputy Marketing Manager across 14+ locations.</p>
+    </div>
+    <div class="big-m reveal">
+      <div class="mbox"><div class="mn">₹1.5Cr</div><div class="ml">Annual integrated marketing budget managed at SALT</div></div>
+      <div class="mbox"><div class="mn">28L+</div><div class="ml">Unique users reached via "Salt for Everyone" repositioning campaign</div></div>
+      <div class="mbox"><div class="mn">+51.3%</div><div class="ml">Hyderabad cover growth YoY — 19,604 → 29,663 covers</div></div>
+      <div class="mbox"><div class="mn">₹222</div><div class="ml">Blended CAC/cover via WhatsApp direct booking — cut aggregator commission 18–25%</div></div>
+    </div>
+    <div class="sub-m reveal">
+      <div class="mbox"><div class="mn">+13.6%</div><div class="ml">Bhartiya City cover growth vs 8% target — 16,197 → 18,405</div></div>
+      <div class="mbox"><div class="mn">2M+</div><div class="ml">Avg monthly organic Instagram reach — zero paid amplification</div></div>
+      <div class="mbox"><div class="mn">+10K</div><div class="ml">Instagram followers in 6 months (22.3K→27.6K) — organic only</div></div>
+      <div class="mbox"><div class="mn">₹1.42Cr</div><div class="ml">Pune dine-in revenue Year 1 from ₹19K base — 14,729 covers built from scratch</div></div>
+    </div>
+    <div class="meta-strip reveal">
+      <div class="ms"><div class="ms-n">₹9.22L</div><div class="ms-l">Meta spend</div></div>
+      <div class="ms"><div class="ms-n">7.8Cr+</div><div class="ms-l">Impressions</div></div>
+      <div class="ms"><div class="ms-n">2.55Cr</div><div class="ms-l">Total reach</div></div>
+      <div class="ms"><div class="ms-n">130+</div><div class="ms-l">Campaigns run</div></div>
+      <div class="ms"><div class="ms-n">₹6–8</div><div class="ms-l">Blended CPC</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="con">
+    <div class="sl reveal"><div class="sl-line"></div><span class="sl-txt">Career</span></div>
+    <h2 class="st reveal">Brands & Businesses I've <em>Scaled.</em></h2>
+    <div class="exp-lay">
+      <div class="etabs rl">
+        <div class="etab on" onclick="swE('salt',this)"><div class="etc">SALT · Barbeque Nation</div><div class="etr">Deputy Marketing Manager</div><div class="etp">May 2025 – Present</div></div>
+        <div class="etab" onclick="swE('tripgo',this)"><div class="etc">TripGo Hospitality</div><div class="etr">Marketing Manager</div><div class="etp">Mar 2024 – Apr 2025</div></div>
+        <div class="etab" onclick="swE('hash',this)"><div class="etc">Hashtag Infosystem</div><div class="etr">SEO, SMM & Content Strategist</div><div class="etp">Aug 2021 – Apr 2023</div></div>
+      </div>
+      <div class="rr">
+        <div id="ep-salt" class="epanel on">
+          <div class="eco">SALT Indian Restaurant Bar & Grill</div>
+          <div class="erol">Deputy Marketing Manager</div>
+          <div class="emet">Barbeque Nation Hospitality · May 2025 – Present · Bengaluru · Annual Budget: ₹1.5Cr</div>
+          <div class="kpis"><div class="kpi"><div class="kv">14+</div><div class="kl">Locations managed</div></div><div class="kpi"><div class="kv">₹10L</div><div class="kl">Repositioning campaign</div></div><div class="kpi"><div class="kv">4/4</div><div class="kl">Goal sheet self-rating</div></div></div>
+          <ul class="elist">
+            <li><div class="dot"></div><div>Led GTM brand marketing for SALT across 14+ locations — integrated campaigns across ATL (200+ OOH touchpoints), digital, PR, influencer, and social channels.</div></li>
+            <li><div class="dot"></div><div>Conceptualised and executed "Salt for Everyone, Every Occasion" — 360° repositioning. 28L+ unique users reached at ₹6–8 blended CPC across 10 locations.</div></li>
+            <li><div class="dot"></div><div>Hyderabad covers grew 51.3% YoY (19,604 → 29,663). Dine-in sales up 53.4% from ₹2.27Cr to ₹3.49Cr. Bhartiya City up 13.6% vs 8% target.</div></li>
+            <li><div class="dot"></div><div>Pune: built from ₹19K revenue base to ₹1.42Cr dine-in and 14,729 covers in Year 1 — essentially launched the market from scratch.</div></li>
+            <li><div class="dot"></div><div>Built performance marketing across 6 stores — ₹12.66L quarterly budget, ₹222/cover CAC via WhatsApp direct booking, cutting aggregator commission 18–25%.</div></li>
+            <li><div class="dot"></div><div>Grew Instagram 22.3K→27.6K (+23.8%) in 6 months with 2M+ monthly organic reach. Zero paid amplification.</div></li>
+            <li><div class="dot"></div><div>T-90 new store launches for Mumbai (Inorbit Mall), Pune (Amanora), Bengaluru (Bhartiya Mall) — OOH, mobile van, mall cubes, digital, PR, influencer.</div></li>
+            <li><div class="dot"></div><div>100+ editorial placements: Hindustan Times, Femina, NDTV Food, ET Hospitality, Curly Tales, Grazia, Elle Gourmet, LBB, UpperCrust, News18, Lifestyle Asia, TOI, New Indian Express.</div></li>
+            <li><div class="dot"></div><div>Executed 20+ experiential events: Salt Masterclass, Mixology × Indri, Quiz Night, Holi Workshop, Street Food Festival × Nexus Vijaya.</div></li>
+          </ul>
+        </div>
+        <div id="ep-tripgo" class="epanel">
+          <div class="eco">TripGo Hospitality</div>
+          <div class="erol">Marketing Manager</div>
+          <div class="emet">Multi-brand · Mar 2024 – Apr 2025 · Bengaluru · Budget: ₹96L+</div>
+          <div class="kpis"><div class="kpi"><div class="kv">8+</div><div class="kl">Brands managed</div></div><div class="kpi"><div class="kv">10×</div><div class="kl">Engagement growth</div></div><div class="kpi"><div class="kv">3.4Cr+</div><div class="kl">Meta impressions</div></div></div>
+          <ul class="elist">
+            <li><div class="dot"></div><div>Managed ₹96L+ annual media budget across Meta, Google, Zomato, Swiggy — 3.4Cr+ impressions, 11.6L+ clicks at blended CPC.</div></li>
+            <li><div class="dot"></div><div>10× engagement growth and 20% new customer acquisition across 8+ brands through data-led content and influencer campaigns.</div></li>
+            <li><div class="dot"></div><div>Grew Oyster Bar & Kitchen 200→1,600 followers organically in 4 months. North Star Cafe 300→1,600 followers — content drove bookings directly.</div></li>
+            <li><div class="dot"></div><div>Hosted 20+ brand events with Pawsana Run Club, Bengaluru Chess Club and others. Led brand repositioning for 8+ brands on aggregators.</div></li>
+          </ul>
+        </div>
+        <div id="ep-hash" class="epanel">
+          <div class="eco">Hashtag Infosystem</div>
+          <div class="erol">SEO, SMM & Content Strategist</div>
+          <div class="emet">UK Client Portfolio · Aug 2021 – Apr 2023 · Surat</div>
+          <div class="kpis"><div class="kpi"><div class="kv">15%</div><div class="kl">MoM sales growth</div></div><div class="kpi"><div class="kv">35%</div><div class="kl">Organic traffic lift</div></div><div class="kpi"><div class="kv">40%</div><div class="kl">TikTok engagement</div></div></div>
+          <ul class="elist">
+            <li><div class="dot"></div><div>Managed Amazon Ads and TikTok Ads for KitchenGlora UK — drove 15% MoM sales growth via bid optimisation and listing improvements.</div></li>
+            <li><div class="dot"></div><div>Led full digital brand revamp — website, Amazon listings, and social. Grew organic traffic 35% via SEO audits. TikTok engagement +40%, followers +25%.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="work">
+  <div class="con">
+    <div class="sl reveal"><div class="sl-line"></div><span class="sl-txt">Case Studies</span></div>
+    <h2 class="st reveal">The <em>work.</em></h2>
+  </div>
+  <div class="cases">
+    <!-- SALT FOR EVERYONE -->
+    <div class="case reveal">
+      <div class="case-imgs">
+        <div class="imgs2">
+          <img src="https://i.ibb.co/60Zd9sHG/Cubes.jpg" alt="Mall Cubes OOH">
+          <img src="https://i.ibb.co/SDt7RFsF/2025-KALYAN-NAGAR.jpg" alt="Salt for Everyone Campaign">
+          <img src="https://i.ibb.co/gMX03vK4/Whats-App-Image-2025-03-17-at-1-12-02-PM.jpg" alt="Campaign Visual">
+          <img src="https://i.ibb.co/CstfqBqn/TV-Screen-B-City-1-01.jpg" alt="TV Screen Bhartiya City">
+        </div>
+        <div class="cov"></div><div class="cbadge">Brand Repositioning · 2025–26</div>
+      </div>
+      <div class="ccon">
+        <div class="cbrand">SALT · Barbeque Nation · 10 Locations</div>
+        <h3 class="ctitle">Salt for Everyone, Every Occasion</h3>
+        <p class="cdesc">Full 360° repositioning campaign shifting SALT from niche dining to an everyday occasion brand. Solo-planned across Meta, Google, ATL/OOH (200+ touchpoints), in-store, and PR within ₹10L budget. Included mall cube branding, TV screens, mobile van OOH, and performance campaigns running simultaneously.</p>
+        <div class="cres">
+          <div class="rc"><div class="rn">28L+</div><div class="rl2">Unique users reached</div></div>
+          <div class="rc"><div class="rn">₹6–8</div><div class="rl2">Blended CPC</div></div>
+          <div class="rc"><div class="rn">₹10L</div><div class="rl2">Total budget</div></div>
+          <div class="rc"><div class="rn">10</div><div class="rl2">Locations activated</div></div>
+        </div>
+        <div class="ctags"><span class="ct">360° Campaign</span><span class="ct">Brand Strategy</span><span class="ct">ATL/OOH</span><span class="ct">Performance</span><span class="ct">PR</span></div>
+      </div>
+    </div>
+
+    <!-- NEW STORE LAUNCHES -->
+    <div class="case flip reveal">
+      <div class="case-imgs">
+        <div class="imgs2">
+          <img src="https://i.ibb.co/5XSCSQKc/Salt-Mumbai-NEW-jpg.jpg" alt="Amchi Mumbai Launch">
+          <img src="https://i.ibb.co/TBVCMc1t/Whats-App-Image-2026-02-23-at-8-19-03-PM.jpg" alt="New Store Opening">
+          <img src="https://i.ibb.co/nMf71nYT/Whats-App-Image-2026-05-08-at-3-24-34-PM.jpg" alt="Store Launch Visual">
+          <img src="https://i.ibb.co/Z71hZn5/Screenshot-2026-05-08-142422.png" alt="Launch Campaign">
+        </div>
+        <div class="cov"></div><div class="cbadge">New Store Launches · 5 Outlets</div>
+      </div>
+      <div class="ccon">
+        <div class="cbrand">SALT · Mumbai · Pune · Bengaluru · Hyderabad · Chennai</div>
+        <h3 class="ctitle">T-90 New Store Launch Playbook</h3>
+        <p class="cdesc">Designed and owned GTM launch strategy for every new SALT outlet — T-90 pre-buzz, OOH (mall walls, cube branding, kiosks, mobile vans), digital, PR seeding, influencer launches. Secured ET Hospitality, Restaurant India, Economic Times, Curly Tales, and Hindustan Times coverage for every launch.</p>
+        <div class="cres">
+          <div class="rc"><div class="rn">5</div><div class="rl2">Outlets launched</div></div>
+          <div class="rc"><div class="rn">T-90</div><div class="rl2">Campaign start</div></div>
+          <div class="rc"><div class="rn">ET + HT</div><div class="rl2">Media coverage</div></div>
+          <div class="rc"><div class="rn">5 Cities</div><div class="rl2">Blr · Pune · Hyd · Mumbai · Chennai</div></div>
+        </div>
+        <div class="ctags"><span class="ct">GTM</span><span class="ct">OOH</span><span class="ct">PR</span><span class="ct">Digital</span><span class="ct">Influencer</span></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENTIAL -->
+    <div class="case reveal">
+      <div class="case-imgs">
+        <div class="imgs2">
+          <img src="https://i.ibb.co/prB1cM60/MG-9194.jpg" alt="Salt Masterclass Event">
+          <img src="https://i.ibb.co/rG7LMSN5/MG-9444.jpg" alt="Event Crowd">
+          <img src="https://i.ibb.co/RTcq3b8Q/SALT-STREET-FOOD-FINAL-1080-X1080-VIJAYA.jpg" alt="Street Food Festival">
+          <img src="https://i.ibb.co/jBHMnzZ/Screenshot-2026-06-20-162143.png" alt="Campaign Creative">
+        </div>
+        <div class="cov"></div><div class="cbadge">Experiential · 20+ Events</div>
+      </div>
+      <div class="ccon">
+        <div class="cbrand">SALT · Bengaluru, Pune, Hyderabad · 2025–26</div>
+        <h3 class="ctitle">Events & Community Calendar</h3>
+        <p class="cdesc">Built SALT's experiential marketing calendar from zero — Salt Masterclass (cooking sessions with Chef Jitinder), Salt Mixology × Indri Brand Ambassador, Quiz Night (Friends Edition), Holi Block Printing Workshop × Unnathi Creatives, Street Food Festival × Nexus Vijaya. Each event drove covers, loyalty, UGC, and organic social reach.</p>
+        <div class="cres">
+          <div class="rc"><div class="rn">20+</div><div class="rl2">Events executed</div></div>
+          <div class="rc"><div class="rn">6+</div><div class="rl2">Brand collabs</div></div>
+          <div class="rc"><div class="rn">UGC</div><div class="rl2">Organic content driven</div></div>
+          <div class="rc"><div class="rn">CRM</div><div class="rl2">Loyalty & repeat covers</div></div>
+        </div>
+        <div class="ctags"><span class="ct">Experiential</span><span class="ct">B2B Collabs</span><span class="ct">Community</span><span class="ct">CRM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="con">
+    <div class="gal-intro">
+      <div class="rl"><div class="sl"><div class="sl-line"></div><span class="sl-txt">Creative Work</span></div><h2 class="st">Campaigns &<br><em>Creatives.</em></h2></div>
+      <p class="ssub rr">OOH, digital campaigns, food festivals, brand collabs and in-mall activations — visual work across 5 cities.</p>
+    </div>
+    <div class="gg reveal">
+      <div class="gi t"><img src="https://i.ibb.co/CstfqBqn/TV-Screen-B-City-1-01.jpg" alt="Bhartiya City Campaign"><div class="gcap">Salt for Everyone · Bhartiya City · TV Screen Campaign</div></div>
+      <div class="gi"><img src="https://i.ibb.co/SDt7RFsF/2025-KALYAN-NAGAR.jpg" alt="Kalyan Nagar Campaign"><div class="gcap">Kalyan Nagar · Campaign 2025</div></div>
+      <div class="gi"><img src="https://i.ibb.co/RTcq3b8Q/SALT-STREET-FOOD-FINAL-1080-X1080-VIJAYA.jpg" alt="Street Food Festival"><div class="gcap">Street Food of India × Nexus Vijaya · Mall Activation</div></div>
+      <div class="gi"><img src="https://i.ibb.co/60Zd9sHG/Cubes.jpg" alt="Mall Cubes OOH"><div class="gcap">SALT Mall Cubes · OOH · Inorbit Malad</div></div>
+      <div class="gi"><img src="https://i.ibb.co/gMX03vK4/Whats-App-Image-2025-03-17-at-1-12-02-PM.jpg" alt="Campaign"><div class="gcap">Brand Campaign · SALT 2025</div></div>
+      <div class="gi w"><img src="https://i.ibb.co/5XSCSQKc/Salt-Mumbai-NEW-jpg.jpg" alt="Mumbai Launch"><div class="gcap">Amchi Mumbai · New Store Launch Creative · Inorbit Mall, Malad</div></div>
+      <div class="gi"><img src="https://i.ibb.co/nMf71nYT/Whats-App-Image-2026-05-08-at-3-24-34-PM.jpg" alt="Store Opening"><div class="gcap">New Store Opening · 2026</div></div>
+      <div class="gi"><img src="https://i.ibb.co/TBVCMc1t/Whats-App-Image-2026-02-23-at-8-19-03-PM.jpg" alt="Campaign"><div class="gcap">SALT Campaign Creative · 2026</div></div>
+    </div>
+    <a href="https://canva.link/shreyapandey" target="_blank" class="glink">Full social media portfolio → canva.link/shreyapandey</a>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="con">
+    <div class="sl reveal"><div class="sl-line"></div><span class="sl-txt">Video Campaigns</span></div>
+    <h2 class="st reveal">Reels &<br><em>Video Work.</em></h2>
+    <div class="vgrid reveal">
+      <a class="vcard" href="https://www.instagram.com/p/DX8hLtiJyZ2/" target="_blank">
+        <div class="vthumb"><img src="https://i.ibb.co/prB1cM60/MG-9194.jpg" alt="Campaign Video"><div class="play-btn"><div class="play-circle"><div class="play-triangle"></div></div></div></div>
+        <div class="vinfo"><div class="vtag">Campaign Reel · SALT</div><div class="vtitle">Brand Campaign Video · June 2026</div></div>
+      </a>
+      <a class="vcard" href="https://www.instagram.com/p/DXWqqWgp4Sg/" target="_blank">
+        <div class="vthumb"><img src="https://i.ibb.co/rG7LMSN5/MG-9444.jpg" alt="Event Video"><div class="play-btn"><div class="play-circle"><div class="play-triangle"></div></div></div></div>
+        <div class="vinfo"><div class="vtag">Event Reel · SALT</div><div class="vtitle">Masterclass & Events Video</div></div>
+      </a>
+      <a class="vcard" href="https://www.instagram.com/p/DRMjgtTktFJ/" target="_blank">
+        <div class="vthumb"><img src="https://i.ibb.co/60Zd9sHG/Cubes.jpg" alt="OOH Video"><div class="play-btn"><div class="play-circle"><div class="play-triangle"></div></div></div></div>
+        <div class="vinfo"><div class="vtag">Brand Reel · SALT</div><div class="vtitle">OOH & Brand Activation Reel</div></div>
+      </a>
+      <a class="vcard" href="https://www.instagram.com/p/DQwO0USkseA/" target="_blank">
+        <div class="vthumb"><img src="https://i.ibb.co/RTcq3b8Q/SALT-STREET-FOOD-FINAL-1080-X1080-VIJAYA.jpg" alt="Food Festival Video"><div class="play-btn"><div class="play-circle"><div class="play-triangle"></div></div></div></div>
+        <div class="vinfo"><div class="vtag">Campaign Reel · SALT</div><div class="vtitle">Street Food Festival Campaign</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section id="press">
+  <div class="con">
+    <div class="press-top">
+      <div class="rl"><div class="sl"><div class="sl-line"></div><span class="sl-txt">Press & Recognition</span></div><h2 class="st">In the news.<br><em>On the stage.</em></h2></div>
+      <p class="ssub rr">100+ earned media placements managed solo through strategic PR outreach, press releases, journalist relationships, and influencer activations across 5 cities.</p>
+    </div>
+    <div class="pstats reveal">
+      <div class="psb"><div class="psn">100+</div><div class="psl">PR placements secured</div></div>
+      <div class="psb"><div class="psn">41.3M</div><div class="psl">Hindustan Times readership</div></div>
+      <div class="psb"><div class="psn">105.8M</div><div class="psl">NDTV Food reach</div></div>
+    </div>
+    <div class="press-imgs reveal">
+      <div class="press-img-card"><img src="https://i.ibb.co/qM291DMC/TOI-Salt.jpg" alt="Times of India Coverage"></div>
+      <div class="press-img-card"><img src="https://i.ibb.co/8nYJZt1g/Peaklife-Awards.jpg" alt="Peaklife Awards"></div>
+    </div>
+    <div class="plabs reveal">
+      <span class="plab">Hindustan Times</span><span class="plab">Economic Times</span><span class="plab">NDTV Food</span><span class="plab">Femina</span><span class="plab">Grazia</span><span class="plab">Elle Gourmet</span><span class="plab">UpperCrust</span><span class="plab">Curly Tales</span><span class="plab">LBB</span><span class="plab">Times of India</span><span class="plab">New Indian Express</span><span class="plab">Lifestyle Asia</span><span class="plab">Midday</span><span class="plab">News18</span><span class="plab">Slurrp</span><span class="plab">Indulge Express</span><span class="plab">Good Homes</span><span class="plab">Hotelier India</span><span class="plab">Restaurant India</span><span class="plab">Local Samosa</span><span class="plab">Peaklife Magazine</span><span class="plab">ET Hospitality</span>
+    </div>
+    <div class="awards-grid reveal">
+      <div class="acard"><div class="aicon">🏆</div><div><div class="atitle">Food Connoisseurs India Awards — 10th Edition</div><div class="adesc">Best Restaurant Chain of the Year · South India Edition · Bengaluru</div></div></div>
+      <div class="acard"><div class="aicon">🏅</div><div><div class="atitle">ET Restaurant Awards 2025</div><div class="adesc">Economic Times Business Verticals · Best Indian Restaurant Bar & Grill</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFLUENCER -->
+<section id="influencer">
+  <div class="con">
+    <div class="sl reveal"><div class="sl-line"></div><span class="sl-txt">Influencer Marketing</span></div>
+    <h2 class="st reveal">Creator-led <em>growth.</em></h2>
+    <div class="istats reveal">
+      <div class="is"><div class="isn">200+</div><div class="isl">Influencer hostings</div></div>
+      <div class="is"><div class="isn">5</div><div class="isl">Cities activated</div></div>
+      <div class="is"><div class="isn">203K</div><div class="isl">Top reel views</div></div>
+      <div class="is"><div class="isn">10+</div><div class="isl">Monthly hostings</div></div>
+    </div>
+    <div class="icities reveal">
+      <span class="ctag">Bengaluru — UB City · Miraya Rose · Bhartiya City · Kalyani Nagar · Koramangala</span>
+      <span class="ctag">Hyderabad — Hitech City · Gachibowli · VSD Tech Park</span>
+      <span class="ctag">Pune — Kalyani Nagar · Amanora · WTC</span>
+      <span class="ctag">Chennai — WTC · Vadapalani</span>
+      <span class="ctag">Mumbai — Inorbit Mall, Malad</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="con">
+    <div class="sl reveal"><div class="sl-line"></div><span class="sl-txt">Capabilities</span></div>
+    <h2 class="st reveal">The full <em>stack.</em></h2>
+    <div class="skgrid reveal">
+      <div class="skb"><div class="skt">Brand & Strategy</div><div class="sks"><span class="sk">Brand Strategy & Positioning</span><span class="sk">360° Integrated Campaigns</span><span class="sk">GTM Strategy</span><span class="sk">ATL / BTL / OOH</span><span class="sk">New Store Launches</span><span class="sk">Brand Repositioning</span><span class="sk">Experiential Marketing</span><span class="sk">Creative Direction</span></div></div>
+      <div class="skb"><div class="skt">Performance & Growth</div><div class="sks"><span class="sk">Meta Ads Manager</span><span class="sk">Google Ads</span><span class="sk">Zomato & Swiggy Ads</span><span class="sk">Amazon Ads</span><span class="sk">SEO / SEM / GMB</span><span class="sk">CAC / LTV / ROAS</span><span class="sk">WhatsApp Marketing</span><span class="sk">Influencer & PR</span></div></div>
+      <div class="skb"><div class="skt">Analytics & Leadership</div><div class="sks"><span class="sk">GA4 & Marketing Analytics</span><span class="sk">Budget Management</span><span class="sk">ROI Optimisation</span><span class="sk">Cross-functional Leadership</span><span class="sk">Stakeholder Management</span><span class="sk">Vendor & Agency Management</span><span class="sk">Team Mentoring</span><span class="sk">CRM & Automation</span></div></div>
+    </div>
+    <div class="tools reveal">
+      <div class="tb">Meta Ads</div><div class="tb">Google Ads</div><div class="tb">GA4</div><div class="tb">HubSpot</div><div class="tb">Canva</div><div class="tb">Wati</div><div class="tb">Mailchimp</div><div class="tb">Amazon Ads</div><div class="tb">Meta Suite</div><div class="tb">Search Console</div><div class="tb">ChatGPT / AI</div><div class="tb">Zomato Ads</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="con">
+    <div class="clay">
+      <div class="rl">
+        <div class="sl"><div class="sl-line"></div><span class="sl-txt">Let's Talk</span></div>
+        <h2 class="st">Open To Brand, Growth & Marketing <br><em>Opportunities.</em></h2>
+        <p class="ssub">Open to Brand Marketing, Growth Marketing, Marketing Manager, Brand Strategist, Consumer Marketing and Remote International Opportunities.</p>
+        <div class="clinks">
+          <a href="mailto:pandeyshreya303@gmail.com" class="clink"><div class="ci">✉</div>pandeyshreya303@gmail.com</a>
+          <a href="tel:+918799325452" class="clink"><div class="ci">📱</div>+91 87993 25452</a>
+          <a href="https://www.linkedin.com/in/shreyapandey0912/" target="_blank" class="clink"><div class="ci">in</div>linkedin.com/in/shreyapandey0912</a>
+        </div>
+        <div class="cquote"><p class="cqt">"Great marketing doesn't just create awareness. It creates business growth."</p></div>
+      </div>
+      <div class="rr">
+        <div class="ctas">
+          <a href="mailto:pandeyshreya303@gmail.com" class="cta p">Send Me an Email</a>
+          <a href="https://www.linkedin.com/in/shreyapandey0912/" target="_blank" class="cta g">View LinkedIn Profile</a>
+          <a href="Shreya_Pandey_CV.pdf" class="cta ol" download>Download Resume</a>
+          <a href="https://canva.link/shreyapandey" target="_blank" class="cta ol">View Social Media Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Shreya Pandey · Brand & Marketing Manager · Bengaluru · pandeyshreya303@gmail.com</p></footer>
+
+<script>
+// CURSOR
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function animR(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animR)})();
+document.querySelectorAll('a,button,.etab,.mbox,.case,.gi,.vcard,.acard,.sk').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('big'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('big'));
+});
+
+// SMOOTH SCROLL — prevents opening new tab
+function go(id){
+  const el=document.getElementById(id);
+  if(el)el.scrollIntoView({behavior:'smooth'});
+  return false;
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href').slice(1);
+    const el=document.getElementById(id);
+    if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}
+  });
+});
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>obs.observe(el));
+
+// EXPERIENCE TABS
+function swE(id,el){
+  document.querySelectorAll('.epanel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.etab').forEach(t=>t.classList.remove('on'));
+  document.getElementById('ep-'+id).classList.add('on');
+  el.classList.add('on');
+}
+</script>
+</body>
+</html>
